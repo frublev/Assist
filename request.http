@@ -1,0 +1,51 @@
+
+POST http://localhost:8000/api/sensor/
+Content-Type: application/json
+
+{
+	"name": "Name2",
+	"description": "Desc2"
+}
+
+###
+
+POST http://localhost:8000/api/v1/stocks/
+Content-Type: application/json
+
+{
+  "address": "address19",
+  "positions": [
+    {
+      "product": 2,
+      "quantity": 250,
+      "price": 170.50
+    },
+    {
+      "product": 5,
+      "quantity": 300,
+      "price": 180
+    }
+  ]
+}
+
+###
+
+PATCH http://localhost:8000/api/v1/stocks/15/
+Content-Type: application/json
+
+{
+  "positions": [
+    {
+      "product": 6,
+      "quantity": 1750,
+      "price": 1120.50
+    },
+    {
+      "product": 5,
+      "quantity": 1700,
+      "price": 1380
+    }
+  ]
+}
+
+
